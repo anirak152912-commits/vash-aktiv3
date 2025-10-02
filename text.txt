@@ -1,0 +1,13 @@
+real-estate-ui-kit/
+├── index.html
+├── styles/
+│   ├── main.css
+│   ├── components.css
+│   └── responsive.css
+├── scripts/
+│   └── main.js
+├── images/
+│   ├── logo.png
+│   └── properties/
+├── README.md
+└── .gitignore

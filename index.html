@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЦИАН - База данных недвижимости</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <div class="logo__square"></div>
+                    <span class="logo__text">ЦИАН</span>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#" class="nav__link">Продажа</a>
+                    <a href="#" class="nav__link">Аренда</a>
+                    <a href="#" class="nav__link">Новостройки</a>
+                    <a href="#" class="nav__link">Виллы</a>
+                    <a href="#" class="nav__link">Сервисы</a>
+                    <a href="#" class="nav__link">Компания</a>
+                </nav>
+
+                <div class="header__actions">
+                    <div class="location-selector">
+                        <span class="location">Дубай</span>
+                        <svg class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                            <path d="M5 7L1 3H9L5 7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+
+                    <div class="language-selector">
+                        <span class="language">Ру</span>
+                        <svg class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                            <path d="M5 7L1 3H9L5 7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+
+                    <div class="currency-selector">
+                        <span class="currency">$, Доллар</span>
+                        <svg class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                            <path d="M5 7L1 3H9L5 7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+
+                    <div class="header__icons">
+                        <button class="icon-btn saved">
+                            <svg width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 2H15L17 4V18L10 14L3 18V4L5 2Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <button class="icon-btn whatsapp">
+                            <svg width="20" height="20" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" fill="none"/>
+                                <circle cx="7" cy="9" r="1" fill="currentColor"/>
+                                <circle cx="13" cy="9" r="1" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <button class="icon-btn telegram">
+                            <svg width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0Z" fill="currentColor"/>
+                                <path d="M14.64 6.92L13.46 14.56C13.34 15.22 12.94 15.38 12.38 15.04L9.5 12.92L8.08 14.26C7.92 14.42 7.78 14.56 7.48 14.56L7.74 11.64L12.74 7.16C12.98 6.94 12.68 6.82 12.36 7.04L6.4 10.92L3.56 10.04C2.9 9.82 2.9 9.36 3.7 9.04L13.9 5.32C14.46 5.1 14.94 5.42 14.64 6.92Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button class="icon-btn phone">
+                            <svg width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M4 2C3.4 2 3 2.4 3 3V17C3 17.6 3.4 18 4 18H16C16.6 18 17 17.6 17 17V3C17 2.4 16.6 2 16 2H4ZM4 0H16C17.7 0 19 1.3 19 3V17C19 18.7 17.7 20 16 20H4C2.3 20 1 18.7 1 17V3C1 1.3 2.3 0 4 0Z" fill="currentColor"/>
+                                <path d="M10 16C10.6 16 11 15.6 11 15C11 14.4 10.6 14 10 14C9.4 14 9 14.4 9 15C9 15.6 9.4 16 10 16Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Search -->
+    <section class="hero-search">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-filters">
+                    <div class="filter-dropdown">
+                        <span>Виллы</span>
+                        <svg class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                            <path d="M5 7L1 3H9L5 7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="search-input">
+                        <input type="text" placeholder="Район, адрес, метро или ЖК...">
+                    </div>
+                    
+                    <div class="filter-dropdown">
+                        <span>Цена</span>
+                        <svg class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                            <path d="M5 7L1 3H9L5 7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="filter-dropdown">
+                        <span>Площадь</span>
+                        <svg class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                            <path d="M5 7L1 3H9L5 7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="filter-dropdown">
+                        <span>Фильтры</span>
+                        <svg class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                            <path d="M5 7L1 3H9L5 7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <button class="search-btn btn-primary">
+                    Начать подбор
+                </button>
+                
+                <button class="save-search icon-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M5 2H15L17 4V18L10 14L3 18V4L5 2Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Listings -->
+    <section class="property-listings">
+        <div class="container">
+            <h2 class="section-title">Новостройки в Дубаи</h2>
+            <p class="section-subtitle">1 240 предложений</p>
+            
+            <div class="properties-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <div class="image-placeholder"></div>
+                        <div class="property-badges">
+                            <div class="badge">Открыты продажи</div>
+                        </div>
+                        <div class="image-nav">
+                            <div class="nav-dot active"></div>
+                            <div class="nav-dot"></div>
+                            <div class="nav-dot"></div>
+                            <div class="nav-dot"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="property-content">
+                        <h3 class="property-title">Аппартаменты в The Palm Jumeirah</h3>
+                        
+                        <div class="property-features">
+                            <div class="feature">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M3 5H17V7H3V5ZM3 9H17V11H3V9ZM3 13H17V15H3V13Z" fill="currentColor"/>
+                                </svg>
+                                <span>3 спальни</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M2 2H18V18H2V2ZM4 4V16H16V4H4Z" fill="currentColor"/>
+                                </svg>
+                                <span>1,443 м²</span>
+                            </div>
+                        </div>
+                        
+                        <div class="property-info">
+                            <div class="info-item">
+                                <span class="label">Район:</span>
+                                <span class="value">Damac Hills, Dubai</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Застройщик:</span>
+                                <span class="value">DAMAC Properties</span>
+                            </div>
+                        </div>
+                        
+                        <div class="property-footer">
+                            <div class="price">
+                                <span class="amount">3 121 187</span>
+                                <div class="currency-select">
+                                    <span>USD</span>
+                                    <svg class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                                        <path d="M5 7L1 3H9L5 7Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <button class="btn-outline">Перейти</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card featured">
+                    <div class="property-image">
+                        <div class="image-placeholder"></div>
+                        <div class="property-badges">
+                            <div class="badge">Окупаемость 100%</div>
+                        </div>
+                        <div class="image-nav">
+                            <div class="nav-dot active"></div>
+                            <div class="nav-dot"></div>
+                            <div class="nav-dot"></div>
+                            <div class="nav-dot"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="property-content">
+                        <h3 class="property-title">The Garden Collection at Dubai</h3>
+                        <p class="property-description">Небольшое описание комплекса на пару строк, чтобы захватило внимание</p>
+                        
+                        <div class="property-features">
+                            <div class="feature">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M3 5H17V7H3V5ZM3 9H17V11H3V9ZM3 13H17V15H3V13Z" fill="currentColor"/>
+                                </svg>
+                                <span>4 спальни</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M2 2H18V18H2V2ZM4 4V16H16V4H4Z" fill="currentColor"/>
+                                </svg>
+                                <span>2,150 м²</span>
+                            </div>
+                        </div>
+                        
+                        <div class="property-footer">
+                            <div class="price">
+                                <span class="amount">4 250 000</span>
+                                <div class="currency-select">
+                                    <span>USD</span>
+                                    <svg class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                                        <path d="M5 7L1 3H9L5 7Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Перейти</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more property cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>ЦИАН — база данных о недвижимости. Использование сайта означает согласие с Пользовательским соглашением и Политикой конфиденциальности ЦИАН.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <a href="#">Справочный центр</a>
+                        <a href="#">Карьера в Циан</a>
+                        <a href="#">Карта сайта</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#">Юридические документы</a>
+                        <a href="#">Свежие объявления</a>
+                        <a href="#">Помощь</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#">Тарифы и цены</a>
+                        <a href="#">Поиск на карте</a>
+                        <a href="#">Проверка недвижимости</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon vk"></a>
+                        <a href="#" class="social-icon telegram"></a>
+                        <a href="#" class="social-icon tiktok"></a>
+                        <a href="#" class="social-icon youtube"></a>
+                    </div>
+                    
+                    <div class="app-download">
+                        <button class="app-btn">Доступно в AppStore</button>
+                        <button class="app-btn">Доступно GooglePlay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
